@@ -4,6 +4,11 @@ import qrcode
 
 link = input("Enter your link for which you need QR code: ")
 name = input("Enter the file name: ")
-img = qrcode.make (link)
-type(img)
-img.save(name, format="png")
+
+try:
+  img = qrcode.make(link)
+  img.save(name , format="png")
+  print("Your QR code has been generated")
+  except:
+  print("Please Enter a valid URL")
+
