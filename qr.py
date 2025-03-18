@@ -9,6 +9,6 @@ try:
   img = qrcode.make(link)
   img.save(name , format="png")
   print("Your QR code has been generated")
-  except:
+except:
   print("Please Enter a valid URL")
 
